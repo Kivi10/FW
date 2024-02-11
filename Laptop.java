@@ -1,7 +1,5 @@
 package FW;
 
-import Sem6.Cat.Cat;
-
 public class Laptop {
     String name;
     int ozu;
@@ -10,7 +8,7 @@ public class Laptop {
     String color;
 
     public String toString() {
-        return "name: " + name + "\n" +"ОЗУ: " + ozu + "\n" + "Объем памяти: " + hdd + "\n" + 
+        return "Название модели: " + name + "\n" +"ОЗУ: " + ozu + " Gb" + "\n" + "Объем памяти: " + hdd + " Gb" + "\n" + 
         "Операционная система: " + os + "\n" + "Цвет: " + color + "\n";
     }
 }
