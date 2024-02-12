@@ -155,13 +155,15 @@ public class FinalWork {
             }
         }
 
-        Set<Laptop> filteredLaptops = laptops.stream()
-        .filter(laptop -> result.getOrDefault("name", "").equals("") || laptop.name.equalsIgnoreCase((String) result.getOrDefault("name", "")))
-        .filter(laptop -> result.getOrDefault("ozu", 0) instanceof Integer && laptop.ozu == (int) result.getOrDefault("ozu", 0))
-        .filter(laptop -> result.getOrDefault("hdd", 0) instanceof Integer && laptop.hdd == (int) result.getOrDefault("hdd", 0))
-        .filter(laptop -> result.getOrDefault("os", "").equals("") || laptop.os.equalsIgnoreCase((String) result.getOrDefault("os", "")))
-        .filter(laptop -> result.getOrDefault("color", "").equals("") || laptop.color.equalsIgnoreCase((String) result.getOrDefault("color", "")))
-        .collect(Collectors.toSet());
+        Set<Laptop> filteredLaptops = filterLaptops(laptops, result);
+
+        // Set<Laptop> filteredLaptops = laptops.stream()
+        // .filter(laptop -> result.getOrDefault("name", "").equals("") || laptop.name.equalsIgnoreCase((String) result.getOrDefault("name", "")))
+        // .filter(laptop -> result.getOrDefault("ozu", 0) instanceof Integer && laptop.ozu == (int) result.getOrDefault("ozu", 0))
+        // .filter(laptop -> result.getOrDefault("hdd", 0) instanceof Integer && laptop.hdd == (int) result.getOrDefault("hdd", 0))
+        // .filter(laptop -> result.getOrDefault("os", "").equals("") || laptop.os.equalsIgnoreCase((String) result.getOrDefault("os", "")))
+        // .filter(laptop -> result.getOrDefault("color", "").equals("") || laptop.color.equalsIgnoreCase((String) result.getOrDefault("color", "")))
+        // .collect(Collectors.toSet());
 
 
         if (filteredLaptops.isEmpty()) {
@@ -343,4 +345,15 @@ public class FinalWork {
                         "6 - Поиск");
     }
 
+    static Set<Laptop> filterLaptops(Set<Laptop> laptops, Map<String, Object> filters) {
+        return laptops.stream()
+                .filter(laptop -> filters.get("name") == null || laptop.getName().equals(filters.get("name")))
+                .filter(laptop -> (int) filters.getOrDefault("ozu", 0) == 0 || laptop.getOzu() >= (int) filters.get("ozu"))
+                .filter(laptop -> (int) filters.getOrDefault("hdd", 0) == 0 || laptop.getHdd() >= (int) filters.get("hdd"))
+                .filter(laptop -> filters.get("os") == null || laptop.getOs().equals(filters.get("os")))
+                .filter(laptop -> filters.get("color") == null || laptop.getColor().equals(filters.get("color")))
+                .collect(Collectors.toSet());
+    
+    }
 }
+

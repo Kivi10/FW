@@ -12,4 +12,20 @@ public class Laptop {
         "Операционная система: " + os + "\n" + "Цвет: " + color + "\n";
     }
 
+    public String getName() {
+        return name;
+    }
+    public String getColor() {
+        return color;
+    }
+    public int getHdd() {
+        return hdd;
+    }
+    public String getOs() {
+        return os;
+    }
+    public int getOzu() {
+        return ozu;
+    }
+
 }
