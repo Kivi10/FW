@@ -32,74 +32,74 @@ import java.util.stream.Collectors;
 public class FinalWork {
     public static void main(String[] args) {
         Laptop laptop1 = new Laptop(); 
-        laptop1.name = "Lenovo";
+        laptop1.name = "lenovo";
         laptop1.ozu = 4;
         laptop1.hdd = 500;
-        laptop1.os = "Windows 11";
-        laptop1.color = "Gray";
+        laptop1.os = "windows 11";
+        laptop1.color = "gray";
 
         Laptop laptop2 = new Laptop(); 
-        laptop2.name = "Asus";
+        laptop2.name = "asus";
         laptop2.ozu = 8;
         laptop2.hdd = 500;
-        laptop2.os = "Windows 11";
-        laptop2.color = "Gray";
+        laptop2.os = "windows 11";
+        laptop2.color = "gray";
 
         Laptop laptop3 = new Laptop();
-        laptop3.name = "Lenovo";
+        laptop3.name = "lenovo";
         laptop3.ozu = 4;
         laptop3.hdd = 500;
-        laptop3.os = "Windows 10";
-        laptop3.color = "Pink";
+        laptop3.os = "windows 10";
+        laptop3.color = "pink";
 
         Laptop laptop4 = new Laptop();
-        laptop4.name = "Dell";
+        laptop4.name = "dell";
         laptop4.ozu = 4;
         laptop4.hdd = 250;
-        laptop4.os = "Windows 10";
-        laptop4.color = "Black";
+        laptop4.os = "windows 10";
+        laptop4.color = "black";
 
         Laptop laptop5 = new Laptop();
-        laptop5.name = "HP";
+        laptop5.name = "hp";
         laptop5.ozu = 16;
         laptop5.hdd = 1000;
-        laptop5.os = "Windows 10";
-        laptop5.color = "White";
+        laptop5.os = "windows 10";
+        laptop5.color = "white";
 
         Laptop laptop6 = new Laptop();
-        laptop6.name = "MacBook";
+        laptop6.name = "macbook";
         laptop6.ozu = 32;
         laptop6.hdd = 1000;
-        laptop6.os = "Mac OS";
-        laptop6.color = "Gray";
+        laptop6.os = "mac os";
+        laptop6.color = "gray";
 
         Laptop laptop7 = new Laptop();
-        laptop7.name = "MacBook";
+        laptop7.name = "macbook";
         laptop7.ozu = 16;
         laptop7.hdd = 500;
-        laptop7.os = "Mac OS";
-        laptop7.color = "Gray";
+        laptop7.os = "mac os";
+        laptop7.color = "gray";
 
         Laptop laptop8 = new Laptop();
-        laptop8.name = "MSI";
+        laptop8.name = "msi";
         laptop8.ozu = 32;
         laptop8.hdd = 2000;
-        laptop8.os = "Windows 11";
-        laptop8.color = "Black";
+        laptop8.os = "windows 11";
+        laptop8.color = "black";
 
         Laptop laptop9 = new Laptop();
-        laptop9.name = "Lenovo";
+        laptop9.name = "lenovo";
         laptop9.ozu = 8;
         laptop9.hdd = 500;
-        laptop9.os = "Windows 11";
-        laptop9.color = "Black";
+        laptop9.os = "windows 11";
+        laptop9.color = "black";
         
         Laptop laptop10 = new Laptop();
-        laptop10.name = "Samsung";
+        laptop10.name = "samsung";
         laptop10.ozu = 16;
         laptop10.hdd = 500;
-        laptop10.os = "Windows 11";
-        laptop10.color = "Gray";
+        laptop10.os = "windows 11";
+        laptop10.color = "gray";
 
         Set<Laptop> laptops = new HashSet<>();
         laptops.add(laptop1);
