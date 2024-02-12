@@ -67,14 +67,14 @@ public class FinalWork {
         laptop5.color = "White";
 
         Laptop laptop6 = new Laptop();
-        laptop6.name = "MacBook Pro";
+        laptop6.name = "MacBook";
         laptop6.ozu = 32;
         laptop6.hdd = 1000;
         laptop6.os = "Mac OS";
         laptop6.color = "Gray";
 
         Laptop laptop7 = new Laptop();
-        laptop7.name = "MacBook Air";
+        laptop7.name = "MacBook";
         laptop7.ozu = 16;
         laptop7.hdd = 500;
         laptop7.os = "Mac OS";
