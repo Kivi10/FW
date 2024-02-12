@@ -157,15 +157,6 @@ public class FinalWork {
 
         Set<Laptop> filteredLaptops = filterLaptops(laptops, result);
 
-        // Set<Laptop> filteredLaptops = laptops.stream()
-        // .filter(laptop -> result.getOrDefault("name", "").equals("") || laptop.name.equalsIgnoreCase((String) result.getOrDefault("name", "")))
-        // .filter(laptop -> result.getOrDefault("ozu", 0) instanceof Integer && laptop.ozu == (int) result.getOrDefault("ozu", 0))
-        // .filter(laptop -> result.getOrDefault("hdd", 0) instanceof Integer && laptop.hdd == (int) result.getOrDefault("hdd", 0))
-        // .filter(laptop -> result.getOrDefault("os", "").equals("") || laptop.os.equalsIgnoreCase((String) result.getOrDefault("os", "")))
-        // .filter(laptop -> result.getOrDefault("color", "").equals("") || laptop.color.equalsIgnoreCase((String) result.getOrDefault("color", "")))
-        // .collect(Collectors.toSet());
-
-
         if (filteredLaptops.isEmpty()) {
             System.out.println("Нет ноутбука удовлетворяющего ваш запрос :(");
         }
